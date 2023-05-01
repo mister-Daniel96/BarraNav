@@ -1,0 +1,49 @@
+@media screen and (max-width:800px) {
+    header {
+
+        .bars {
+            display: block;
+            cursor: pointer;
+
+            .line {
+                width: 30px;
+                height: 5px;
+                margin: 4px 0;
+                background-color: white;
+            }
+        }
+
+        .navBar {
+            height: 0;
+            position: absolute;
+            width: 100%;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background-color: black;
+            transition: 0.5s;
+            overflow: hidden;
+
+            &.activar {
+                height: 100vh;
+                & ul{
+                   opacity: 1;
+                }
+            }
+
+            ul {
+                display: block;
+                width: fit-content;
+                margin:  25vh auto;
+                opacity: 0;
+
+                li a {
+                    text-align: center;
+                    display: block;
+                    margin: 10px 0;
+
+                }
+            }
+        }
+    }
+}
